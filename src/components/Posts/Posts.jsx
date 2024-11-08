@@ -21,7 +21,7 @@ export  default function Posts() {
     return (
         <>
             <div className="container-posts px py">
-                <h2>Some works created by our students</h2>
+                <h2>all posts</h2>
                 <div className="posts">
                     {data?.data.map((post) => (
                         <Post key={post.id} url={post.imageUrl} title={post.title} discription={post.discription} data={post.createdAt }/>

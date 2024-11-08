@@ -65,3 +65,22 @@
         scale: 1.02;
     }
 }
+
+
+@media  (max-width: 767px) {
+    .post{
+        width: 100%;
+    }
+}
+
+@media  (min-width: 768px) {
+    .post{
+        width: calc((100% / 2 ) - 1rem);
+    }
+}
+
+@media  (min-width: 1024px) {
+    .post{
+        width: calc((100% / 3 ) - 1rem);
+    }
+}

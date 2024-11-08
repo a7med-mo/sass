@@ -36,3 +36,30 @@ header {
         }
     }
 }
+
+@media  (max-width: 767px) {
+    ul {
+
+        li {
+            font-size: .8rem;
+        }
+    }
+}
+
+@media  (min-width: 768px) {
+    ul {
+
+        li {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media  (min-width: 1024px) {
+    ul {
+
+        li {
+            font-size: 1.1rem;
+        }
+    }
+}
