@@ -9,14 +9,14 @@ export default function Post({ url, title, discription, data }) {
                     <img src={url} alt={title} />
                 </div>
                 <div className="box-text">
-                    <h3>{title}</h3>
-                    <p>{discription}</p>
-                    <p>
+                    <p className='data'>
                         {data
                             ? `Posted ${formatDistanceToNow(data, { addSuffix: true })}`
                             : "Date not available"
                         }
                     </p>
+                    <h3>{title}</h3>
+                    <p>{discription}</p>
                 </div>
             </div>
         </>

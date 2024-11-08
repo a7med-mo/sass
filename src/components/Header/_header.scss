@@ -3,6 +3,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 2;
     color: #fff;
     @include flex(row, space-between, center, 0.5rem);
 
