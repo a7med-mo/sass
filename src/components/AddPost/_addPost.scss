@@ -1,0 +1,98 @@
+.box-form {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+
+
+    form {
+        width: 50% !important;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        z-index: 10;
+        background: #fff;
+        padding: 3rem 2rem 3rem 2rem;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(135, 135, 135, 0.764);
+        @include flex(column, center, "", 1rem);
+
+        label {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-top: .5rem;
+            text-transform: capitalize;
+        }
+
+        input {
+            width: 100%;
+            padding: .8rem;
+            border: 1px solid #ccc;
+            border-radius: .5rem;
+            outline: none;
+
+            &:focus {
+                border: 1px solid #000;
+            }
+
+        }
+
+        button {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        svg {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: red;
+                rotate: 90deg;
+                scale: 1.1;
+            }
+        }
+
+        animation: identifier .4s ease;
+
+    }
+
+    @keyframes identifier {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .popup {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.712);
+    }
+}
+
+
+.box-btn {
+    width: 100%;
+    @include flex(row, center, center, 1rem);
+    padding-bottom: 10rem;
+}
